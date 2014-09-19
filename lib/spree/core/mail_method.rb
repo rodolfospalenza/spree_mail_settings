@@ -14,6 +14,10 @@ module Spree
         mailer_class.new(mail_server_settings)
       end
 
+      def settings
+        mail_server_settings
+      end
+
       private
       def mailer_class
         Rails.env.test?? Mail::TestMailer : Mail::SMTP
