@@ -1,4 +1,5 @@
 require 'spree_core'
+require 'sidekiq'
 require 'spree/core/mail_interceptor'
 require 'spree/core/mail_method'
 require 'spree/core/mail_settings'
